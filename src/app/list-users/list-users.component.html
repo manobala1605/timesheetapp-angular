@@ -1,0 +1,26 @@
+<p>list-users works!</p>
+
+<!--{{users | json}}-->
+
+<table class="table table-borderd">
+    <thead>
+        <tr>
+            <th>User-Id</th>
+            <th>name</th>
+            <th>email</th>
+            <th>password</th>
+            <th>mobile</th>
+            <th>role</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let user of users;let i= index">
+            <td>{{i+1}}</td>
+            <td>{{user.name}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.password}}</td>
+            <td>{{user.mobile}}</td>
+            <td>{{user.role}}</td>
+        </tr>
+    </tbody>
+</table>
