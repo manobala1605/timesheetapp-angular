@@ -1,0 +1,18 @@
+h1{
+    font-family: Courier New;
+    font-size: 45px;
+}
+body{
+    /* background-image: url("https://wallpaperaccess.com/full/1635655.jpg"); */
+    background-attachment: fixed;
+    background-size:cover;
+    line-height: 35px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+#submit{
+    background-color: green;
+}
+#reset{
+    background-color: red;
+}

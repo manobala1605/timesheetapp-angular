@@ -7,12 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent implements OnInit {
-
   Name!: string;
-  role!: string;
-  mobileNumber!: string;
   email!: string;
   password!: string;
+  mobileNumber!: string;
+  role!: string;
 
   constructor(private http:HttpClient) {}
    
@@ -21,13 +20,13 @@ export class RegisterComponent implements OnInit {
   }
   register() {
      const userObj={
-      "name":"kiruba",
-      "email":"kk@gmail.com",
-      "password":"kiki@123",
-      "mobile":"9500322474",
-      "role":"user"
+      "name":this.Name,
+      "email":this.email,
+      "password":this.password,
+      "mobile":this.mobileNumber,
+      "role":this.role
      };
-     const url="http://localhost:9000/users/save";
+     const url="http://localhost:9000/user/register";
      this.http.post(url,userObj).subscribe((res)=>{
        console.log(res);
        alert("successfully Registered");

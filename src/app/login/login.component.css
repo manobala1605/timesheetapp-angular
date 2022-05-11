@@ -1,0 +1,16 @@
+h1{
+    font-family: Courier New;
+}
+body{
+    /* background-image: url("register user.jpg"); */
+    background-attachment: fixed;
+    background-size: 1360px;
+    line-height: 35px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#submit{
+    background-color: green;
+}
+#reset{
+    background-color: red;
+}

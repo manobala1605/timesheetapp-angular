@@ -1,1 +1,44 @@
-<p>login works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USER LOGIN</title>
+</head>
+<body>
+    <h1>USER LOGIN</h1>
+    <!-- <aside style="margin-left: 100px;margin-top: 50px;" >
+        <img src="TSAlogo.png">
+    </aside> -->
+    <form (ngSubmit)="login()">
+        <div>
+            <label for="email">Email-ID:</label>
+            <input type="text" name="email" [(ngModel)]="email" id="email"
+            placeholder="enter email-id" required/>
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" name="password" [(ngModel)]="password" id="password"
+            placeholder="enter password" required/>
+        </div>
+        <div>
+            <label for="dropdown"></label>
+        </div>
+        <div>
+            <a href="http://localhost:4200/projects"> <button type="submit" id="submit">LOGIN</button></a> &nbsp;
+            <!-- <a href="registration.html"><button type="button">register</button></a> -->
+            <button type="reset" id="reset">RESET</button>
+            
+                <!-- <input type="submit"/> -->
+        </div>
+        <div>
+            <label for="register">Does not registered yet?
+                <a href="http://localhost:4200/register">REGISTER</a> now!
+            </label>
+        </div>
+        <!-- <script src="login.js"></script> -->
+    </form>
+    
+</body>
+</html>
